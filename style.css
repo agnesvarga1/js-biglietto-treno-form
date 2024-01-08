@@ -6,8 +6,61 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: magenta;
+  background-color: #b91450;
   color: white;
   text-align: center;
   padding: 2rem;
+  font-size: 20px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+h2 {
+  text-transform: uppercase;
+}
+.form,
+.bigletto {
+  width: 100%;
+  background-color: white;
+  color: #b91450;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+}
+
+.fields {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+input,
+select {
+  border: 1px solid #b91450;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+.noshow {
+  display: none;
+}
+
+.btn {
+  color: #b91450;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 3px solid darkgray;
+}
+
+.btn.btn-gen {
+  border-color: #e88d3d;
+  margin-right: 10px;
 }

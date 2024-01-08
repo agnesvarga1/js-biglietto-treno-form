@@ -7,20 +7,35 @@
     <title>Train Ticket Creator</title>
   </head>
   <body>
-    <div class="form-container">
-      <h1>Calacola il prezzo del tuo biglietto</h1>
+    <div class="container">
+      <h2>Calcola il prezzo del tuo biglietto</h2>
       <div class="form">
-        <input id="namePassenger" type="text" placeholder="Nome Cognome" />
-        <input id="kmJourney" type="number" placeholder="kilometri" />
-        <select name="age" id="agePassenger">
-          <option value="minorenne">Minnorene</option>
-          <option value="maggiorenne">Maggiorenne</option>
-          <option value="pensionato">Pensionato</option>
-        </select>
+        <div class="fields">
+          <div class="input-field">
+            <label for="namePassenger">Nome e Cognome</label>
+            <input id="namePassenger" type="text" placeholder="Nome Cognome" />
+          </div>
+          <div class="input-field">
+            <label for="kmJourney">KM da percorrere</label>
+            <input id="kmJourney" type="number" placeholder="kilometri" />
+          </div>
+          <div class="input-field">
+            <label for="age">Fascia d'eta</label>
+            <select name="age" id="agePassenger">
+              <option value="minorenne">Minnorene</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="pensionato">Pensionato</option>
+            </select>
+          </div>
+        </div>
         <button id="genera" class="btn btn-gen">Genera</button>
+        <button id="delete" class="btn btn-annulla">Annulla</button>
       </div>
     </div>
-
+    <div class="container biglietto-container">
+      <h2>IL tuo biglietto</h2>
+      <div class="biglietto"></div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
