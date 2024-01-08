@@ -28,6 +28,7 @@ form.addEventListener("submit", function (e) {
   console.log(namePassenger);
   generaBiglettoPrezzo(kmViaggio, etaPassenger);
   console.log(prezzoBiglietto);
+  nameDisplay.style.textTransform = "capitalize";
   nameDisplay.innerHTML = namePassenger;
   randomCarr = generaRandomNumber(1, 15);
   randomcodeCP = generaRandomNumber(0, 99999);
