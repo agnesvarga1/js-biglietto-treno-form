@@ -13,7 +13,12 @@
         <div class="fields">
           <div class="input-field">
             <label for="namePassenger">Nome e Cognome</label>
-            <input id="namePassenger" type="text" placeholder="Nome Cognome" />
+            <input
+              id="namePassenger"
+              type="text"
+              placeholder="Nome Cognome"
+              required
+            />
           </div>
           <div class="input-field">
             <label for="kmJourney">KM da percorrere</label>
@@ -22,8 +27,8 @@
           <div class="input-field">
             <label for="age">Fascia d'eta</label>
             <select name="age" id="agePassenger">
-              <option value="minorenne">Minnorene</option>
               <option value="maggiorenne">Maggiorenne</option>
+              <option value="minorenne">Minnorene</option>
               <option value="pensionato">Pensionato</option>
             </select>
           </div>
@@ -32,9 +37,36 @@
         <button id="delete" class="btn btn-annulla">Annulla</button>
       </div>
     </div>
-    <div class="container biglietto-container">
+    <div class="container biglietto-container noshow">
       <h2>IL tuo biglietto</h2>
-      <div class="biglietto"></div>
+      <div class="biglietto">
+        <h3>Dettaglio passeggeri</h3>
+
+        <div class="biglietto-dettagli">
+          <div class="nomeDisp">
+            <h3>Nome passeggero</h3>
+            <h4 id="pass-nome">Jon Snow</h4>
+          </div>
+          <div class="altro">
+            <div class="dettaglio">
+              <h5>Offerta</h5>
+              <span id="ticket-type-display">Biglietto Standard</span>
+            </div>
+            <div class="dettaglio">
+              <h5>Carrozza</h5>
+              <span id="carr-display">5</span>
+            </div>
+            <div class="dettaglio">
+              <h5>Codice CP</h5>
+              <span id="code-display">99999</span>
+            </div>
+            <div class="dettaglio">
+              <h5>Costo biglietto</h5>
+              <span id="prezzo-display">2.11</span><span>&euro;</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./main.js"></script>
   </body>
