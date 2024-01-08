@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h2>Calcola il prezzo del tuo biglietto</h2>
-      <div class="form">
+      <form class="form">
         <div class="fields">
           <div class="input-field">
             <label for="namePassenger">Nome e Cognome</label>
@@ -22,7 +22,12 @@
           </div>
           <div class="input-field">
             <label for="kmJourney">KM da percorrere</label>
-            <input id="kmJourney" type="number" placeholder="kilometri" />
+            <input
+              id="kmJourney"
+              type="number"
+              placeholder="kilometri"
+              required
+            />
           </div>
           <div class="input-field">
             <label for="age">Fascia d'eta</label>
@@ -33,9 +38,9 @@
             </select>
           </div>
         </div>
-        <button id="genera" class="btn btn-gen">Genera</button>
+        <button type="submit" id="genera" class="btn btn-gen">Genera</button>
         <button id="delete" class="btn btn-annulla">Annulla</button>
-      </div>
+      </form>
     </div>
     <div class="container biglietto-container noshow">
       <h2>IL tuo biglietto</h2>

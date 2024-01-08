@@ -1,3 +1,4 @@
+const form = document.querySelector("form");
 const namePassengerHtml = document.querySelector("#namePassenger");
 const bigliettoKm = document.querySelector("#kmJourney");
 const ageHtml = document.querySelector("#agePassenger");
@@ -18,7 +19,8 @@ let prezzoBiglietto,
   randomCarr,
   randomcodeCP;
 
-btnGenBigletto.addEventListener("click", function () {
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
   containerBiglietto.classList.remove("noshow");
   namePassenger = namePassengerHtml.value;
   kmViaggio = bigliettoKm.value;
