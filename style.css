@@ -69,7 +69,7 @@ select {
 .biglietto {
   color: black;
   text-align: left;
-  padding: 1rem 0.3rem;
+  padding: 1rem;
 }
 .biglietto-dettagli {
   margin-top: 0.5rem;
@@ -83,8 +83,8 @@ select {
 
 .altro {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
+  gap: 12rem;
+  width: 80%;
   padding: 1rem;
   border-block: 1px solid gray;
 }
